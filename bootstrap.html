@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyWebsite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style_bootstrap.css" />
+  </head>
+  <body>
+    <!-- Section 1: Menu -->
+    <nav class="menu d-flex align-items-center">
+      <div class="logo me-auto">MyWebsite</div>
+      <a href="#section2">Header</a>
+      <a href="#section3">About Me</a>
+      <a href="#section4">Portofolio</a>
+    </nav>
+
+    <!-- Section 2: Header -->
+    <section class="header container my-5" id="section2">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1>Selamat Datang di Website Saya</h1>
+          <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+          <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal"> Pelajari lebih lanjut </a>
+        </div>
+        <div class="col-md-6">
+          <img src="https://plus.unsplash.com/premium_photo-1661412968858-94c2675c3370?w=500&auto=format&fit=crop&q=60" alt="Gambar Header" class="img-fluid rounded" />
+        </div>
+      </div>
+
+      <!-- Modal Bootstrap -->
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myModalLabel">Selamat Datang</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">Terima kasih telah mengunjungi website saya. Di sini kamu bisa melihat portofolio, biodata, dan banyak lagi!</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: About Me -->
+    <section class="about container my-5" id="section3">
+      <h2>About Me</h2>
+      <p>A brief introduction about myself</p>
+      <div class="row g-3 mt-3">
+        <div class="col-6 col-md-4">
+          <div class="biodata-box">Full Name</div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="biodata-box">Education</div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="biodata-box">Pekerjaan</div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="biodata-box">Kontak</div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="biodata-box">Hobi</div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="biodata-box">Alamat</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Portofolio -->
+    <section class="portfolio container my-5" id="section4">
+      <h2>Portofolio</h2>
+      <div class="row g-4 mt-3">
+        <div class="col-md-6 col-lg-3">
+          <div class="project">
+            <img src="https://images.unsplash.com/photo-1642132652803-01f9738d0446?auto=format&fit=crop&w=300&q=80" alt="Proyek 1" class="img-fluid" />
+            <h3 class="mt-2">Proyek 1</h3>
+            <p>Aplikasi Tugas Harian Berbasis Web</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="project">
+            <img src="https://images.unsplash.com/photo-1649442746245-f51f4b76963f?auto=format&fit=crop&w=300&q=80" alt="Proyek 2" class="img-fluid" />
+            <h3 class="mt-2">Proyek 2</h3>
+            <p>Desain Website Company Profile</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="project">
+            <img src="https://images.unsplash.com/photo-1635236269199-3c71295855b3?auto=format&fit=crop&w=300&q=80" alt="Proyek 3" class="img-fluid" />
+            <h3 class="mt-2">Proyek 3</h3>
+            <p>Dashboard Analitik Penjualan</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="project">
+            <img src="https://images.unsplash.com/photo-1626767843159-92e67fdd4721?auto=format&fit=crop&w=300&q=80" alt="Proyek 4" class="img-fluid" />
+            <h3 class="mt-2">Proyek 4</h3>
+            <p>Aplikasi Mobile Absensi Karyawan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
